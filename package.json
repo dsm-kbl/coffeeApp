@@ -1,0 +1,23 @@
+{
+  "name": "coffeeApp",
+  "version": "1.0.0",
+  "description": "coffee app for 11th floor coffee area",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsm-kbl/coffeeApp"
+  },
+  "author": "skf gmbh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsm-kbl/coffeeApp/issues"
+  },
+  "homepage": "https://github.com/dsm-kbl/coffeeApp",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}
