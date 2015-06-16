@@ -1,10 +1,14 @@
-var http = require("http");
+var express = require('express'),
+        app = express();
 
-http.createServer(function(req, res){
-    res.writeHead(200, {
-        'Content-type': 'text/plain'
-    });
-    res.end('Hello World');
-}).listen(3000);
+app.get('/', function(req, res){
+    res.send('This is a GET request');
+});
 
-console.log('Server running at http://localhost:3000');
+app.get('/admin', function(req, res){
+    res.send('This is the admin request');
+});
+
+app.listen(3000, function(){
+    console.log('Server running at http://localhost:3000');
+});
